@@ -1,0 +1,16 @@
+||| 2024-09-29 12:55:48,049 ||| WARNING ||| tests_12_4 ||| Неверный тип данных для объекта Runner |||
+Traceback (most recent call last):
+  File "C:\PycharmProjects\modul_12\tests_12_4.py", line 24, in test_run
+    test_petr = rt_ex.Runner(True, 9)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PycharmProjects\modul_12\rt_with_exceptions.py", line 7, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано bool
+||| 2024-09-29 12:55:48,050 ||| WARNING ||| tests_12_4 ||| Неверная скорость для Runner |||
+Traceback (most recent call last):
+  File "C:\PycharmProjects\modul_12\tests_12_4.py", line 13, in test_walk
+    test_petr = rt_ex.Runner('Petr', -9)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PycharmProjects\modul_12\rt_with_exceptions.py", line 12, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -9
